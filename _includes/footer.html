@@ -1,0 +1,42 @@
+<footer class="site-footer container">
+  <div class="wrapper">
+    <div class="row">
+      <div class="col-md-4">
+        <a class="page-link" href="{{ site.baseurl }}/about/licenses.html">ライセンスについて</a>
+
+        <ul class="social-list">
+          {% if site.facebook_username %}
+          <li>
+            <img src="{{ site.baseurl }}/images/fb.png" alt="facebook" width="14px" /> :
+            <a href="https://www.facebook.com/{{ site.facebook_username }}">
+              {{ site.facebook_username }}
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            <img src="{{ site.baseurl }}/images/tw.png" alt="twitter" width="14px" /> :
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              {{ site.twitter_username }}
+            </a>
+          </li>
+          {% endif %}
+
+          <li>メール: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-8">
+        <p>
+          <img border="0" alt="odd2017" src="{{ site.baseurl }}/images/OKFJ_image.jpg" width="20%">
+          &nbsp;&nbsp;Supported by <a href="http://okfn.jp/">Open Knowledge Japan(OKJP)</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{{ site.baseurl }}/js/jquery-2.1.1.min.js"></script>
+<script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
